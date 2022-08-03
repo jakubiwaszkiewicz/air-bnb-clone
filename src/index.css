@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-size: 1.125rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.card--container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+/* //// General rules section ////*/
+
+h1 {
+  font-size: 3rem;
+}
+
+section {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/* //// NavBar section ////*/
+
+.NavBar {
+  width: 100%;
+  height: 4.5em;
+  box-shadow: 0 0 1rem #bdbdbd;
+  padding: 1em 1.5em;
+  display: flex;
+}
+
+
+/* //// Hero section ////*/
+
+
+.Hero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero--photo_grid {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.hero--header {
+  margin: 1em 0;
+}
+
+.hero--text {
+  margin: 0;
+}
+
+
+/* //// Card section //// */
+
+
+@media (width: 700px) {
+  
+}
+
+.Card {
+  padding: 0;
+  border-radius: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  max-width: 300px;
+  position: relative;
+}
+
+.card--person {
+  width:100%;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+  margin: 0.25em 0;
+}
+
+.card--star {
+  max-width: 1.5em;
+}
+
+.Card p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.card--bold {
+  font-weight: 700;
+}
+
+.card--grey {
+  color: grey;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  opacity: 0.5;
+  padding: 5px 7px;
+  border-radius: 0.2em;
+  font-weight: bold;
 }
